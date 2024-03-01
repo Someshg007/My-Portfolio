@@ -14,7 +14,7 @@
 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows: 450px;
+        grid-template-rows: auto;
     }
     
     .content-2 {
@@ -33,7 +33,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .content h1 {
+    /* .content h1 {
         font-size: 70px;
         font-weight: 700;
         margin: 0;
@@ -50,7 +50,7 @@
 
         font-size: 17px;
         display: flex;
-    }
+    } */
     
     .skill-main img {
         height: 20px;
