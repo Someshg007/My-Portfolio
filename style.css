@@ -5,28 +5,27 @@
 }
 
 .nav-item a {
-    color: rgb(190, 189, 189);
-    filter: drop-shadow(0px 0px .5px rgb(0, 0, 0));
+    color: rgb(255, 255, 255);
+   
 }
 
 .nav-item a:hover {
     color: rgb(255, 77, 109);
-    filter: drop-shadow(0px 0px .5px rgb(0, 0, 0));
 }
 
 .navbar-brand {
     font-family: "Alegreya Sans SC", sans-serif;
-    font-size: 23px !important;
+    font-size: 25px !important;
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: rgb(255, 255, 255) !important;
-    filter: drop-shadow(0px 0px .5px white);
+    color: rgb(255, 77, 109)  !important;
+    -webkit-text-stroke: .5px white;
 }
 
 .navbar-brand:hover {
-    color: rgb(255, 77, 109) !important;
-    filter: drop-shadow(0px 0px .5px white);
+    color: rgb(255, 255, 255) !important;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
 }
 
 .navbar {
@@ -47,12 +46,6 @@
     filter: blur(5px);
 }
 
-/* .navbar-toggler
-{
-    background-color: rgb(209, 209, 209) !important;
-    
-    border: 1px solid rgb(0, 0, 0) !important;
-} */
 .content {
 
     display: grid;
@@ -72,7 +65,7 @@
 
 .content h1 {
 
-    color: rgb(0, 106, 255);
+    color: rgb(255, 77, 109);
     -webkit-text-stroke: .5px white;
     font-size: 80px;
     font-weight: 700;
@@ -86,7 +79,7 @@
 .content h4 {
     font-weight: 700;
     margin-left: 10%;
-    color: rgb(255, 77, 109);
+    color: rgb(255, 255, 255);
     filter: drop-shadow(0px 0px .5px rgb(0, 0, 0));
 }
 
@@ -99,7 +92,7 @@
     color: rgb(255, 77, 109);
     /* -webkit-text-stroke: .1px white; */
     filter: drop-shadow(0px 0px .5px rgb(0, 0, 0));
-    font-size: 22px;
+    font-size: 17px;
     display: flex;
 }
 
@@ -125,7 +118,7 @@
     grid-auto-rows: 250px;
     margin-bottom: 20px;
     column-gap: 10px;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-bottom:10%; */
 }
 
@@ -144,7 +137,7 @@
 }
 
 .content-box:hover {
-    background-color: rgb(239, 255, 190);
+    background-color: rgb(255, 77, 109);
     box-shadow: 0px 0px 5px white;
     cursor: pointer;
     transform: translateY(-2px);
@@ -159,29 +152,162 @@
 
 .content-box h3 {
     color: rgb(255, 77, 109);
-    filter: drop-shadow(0px 0px .5px rgb(0, 0, 0));
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
 }
 
 .content-box p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 500;
 }
 
 .content-sub-2 img {
-    height: 90%;
-    width: 60%;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 4px solid white;
 }
 
 .content-sub-2 img:hover {
-    filter: drop-shadow(0px 0px 5px black);
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
 }
 
 .content-sub-2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .social-media h3
 {
 font-size: 25px;
+}
+
+/* About Css */
+.about h1
+{
+text-align: center;
+color: white;
+border-bottom: 1px solid rgba(141, 141, 141, 0.532);
+margin-bottom: 20px;
+padding-bottom:10px;
+}
+.about
+{
+    margin-bottom: 20px;
+}
+.about-intro p
+{
+color: white;
+text-transform: capitalize;
+}
+.progress
+{
+    margin: 10px;
+}
+.progression
+{
+color: white;
+border-left: 1px solid rgb(132, 132, 132);
+padding: 20px;
+}
+.about-intro
+{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+column-gap: 30px;
+margin-bottom: 10px;
+}
+.intro p i
+{
+    font-size: 25px;
+}
+.skill 
+{
+    margin: 0;
+    display: flex;
+}
+#skill
+{
+    display: flex;
+}
+.intro-img
+{
+    display: flex;
+    justify-content: center;
+}
+.intro-img img
+{
+    display: none;
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+}
+
+/* Contact  */
+.contact-head h1
+{
+text-align: center;
+color: white;
+border-bottom: 1px solid rgb(123, 123, 123);
+padding-bottom: 10px;
+}
+.contact-main  
+{
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.contact-main img 
+{
+    height: 40px;
+   width: 40px;
+}
+.location
+{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.email
+{
+    display: flex;
+    flex-direction: column;
+  margin-top: -20px;
+   
+}
+.email img
+{
+    height: 30px;
+    width: 30px;
+   margin-bottom: 4px;
+}
+.google
+{
+    display: flex;
+    justify-content: center;
+}
+.email a
+{
+    text-decoration: none;
+   color: black;
+}
+.social img
+{
+    text-align: center;
+    margin: 10px;
+}
+.social img:hover
+{
+    transform: scale(1.1);
+    transition: all ease 1s;
+    cursor: pointer;
+}
+.social h3
+{
+    color:black;
+    text-align: center;
 }
